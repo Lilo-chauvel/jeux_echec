@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <title>jeux echec</title>
-</head>
-<body>
-    <div>
-        <h1 id="title">Play chess</h1>
-        <p id="welcome">Bienvenue sur mon jeu d'échec</p>
-
-        <i class="fa-solid fa-chess-bishop" style="font-size: 3.5rem;  color:rgb(0, 0, 0);"></i>
-        <i class="fa-solid fa-chess-king"></i>
-        <i class="fa-solid fa-chess-pawn"></i>
-        <i class="fa-solid fa-chess-knight"></i>
-        <i class="fa-solid fa-chess-queen"></i>
-        <i class="fa-solid fa-chess-pawn"></i>
-        <i class="fa-solid fa-chess-rook"></i>
-
-    <div class="chessboard-container">
-        <div class="chessboard-js"></div>
-    </div>
-    
-        <!--<button id="toggle-btn">Mode sombre</button>    -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css"/>
+        <title>jeux echec</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">Play chess</h1>
+            <p id="welcome">Bienvenue sur mon jeu d'échec</p>
+            
+            <div class="chessboard-container">
+                <div class="white_piece">
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-king"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                </div>
+                
+                <div class="black_piece">        
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-king"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                </div>
+                <div class="chessboard-js"></div>
+                
+            </div>
+            
+            <!--<button id="toggle-btn">Mode sombre</button>    -->
         <section class="time">
-            <h3>Temps restant</h3>
-            <p><span class="white-player">60</span>s</p>
-            <p><span class="black-player">60</span>s</p>
+
+            <section class="time_white">
+                <h3>Temps restant blancs</h3>
+                <p><span class="white-player">60</span>s</p>
+            </section>
+
+            <section class="time_black">
+                <h3>Temps restant noirs</h3>
+                <p><span class="black-player">60</span>s</p>
+            </section>
+            
         </section>
-
-
     </div>
 
     <script src="./src/Black_white_wallpaper.js"></script>
