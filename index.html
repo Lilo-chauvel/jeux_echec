@@ -6,31 +6,42 @@
     <link rel="stylesheet" href="./styles.css"/>
     <title>jeux echec</title>
 </head>
-    <body id="body">
-        <div>
+<body>
+    <div>
         <h1 id="title">Play chess</h1>
         <p id="welcome">Bienvenue sur mon jeu d'échec</p>
-        <!--<button id="toggle-btn">Mode sombre</button>    -->
-        </div>
 
-        <div class="chessboard-container">
+        <i class="fa-solid fa-chess-bishop" style="font-size: 3.5rem;  color:rgb(0, 0, 0);"></i>
+        <i class="fa-solid fa-chess-king"></i>
+        <i class="fa-solid fa-chess-pawn"></i>
+        <i class="fa-solid fa-chess-knight"></i>
+        <i class="fa-solid fa-chess-queen"></i>
+        <i class="fa-solid fa-chess-pawn"></i>
+        <i class="fa-solid fa-chess-rook"></i>
+
+    <div class="chessboard-container">
         <div class="chessboard-js"></div>
-        </div>
+    </div>
+    
+        <!--<button id="toggle-btn">Mode sombre</button>    -->
+        <section class="time">
+            <h3>Temps restant</h3>
+            <p><span class="white-player">60</span>s</p>
+            <p><span class="black-player">60</span>s</p>
+        </section>
 
 
+    </div>
 
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="./src/Black_white_wallpaper.js"></script>
     <script>
-    function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-    </script>
-
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+        </script>
     <script src="script.js"></script>
-
-
-
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</body>
 </html>
