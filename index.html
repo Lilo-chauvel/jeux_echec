@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <title>jeux echec</title>
-</head>
-    <body id="body">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css"/>
+        <title>jeux echec</title>
+    </head>
+    <body>
         <div>
-        <h1 id="title">Play chess</h1>
-        <p id="welcome">Bienvenue sur mon jeu d'échec</p>
-        <!--<button id="toggle-btn">Mode sombre</button>    -->
-        </div>
+            <h1 id="title">Play chess</h1>
+            <p id="welcome">Bienvenue sur mon jeu d'échec</p>
+            
+            <div class="chessboard-container">
+                <div class="white_piece">
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-king"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                </div>
+                
+                <div class="black_piece">        
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <i class="fa-solid fa-chess-king"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <i class="fa-solid fa-chess-pawn"></i>
+                </div>
+                <div class="chessboard-js"></div>
+                
+            </div>
+            
+            <!--<button id="toggle-btn">Mode sombre</button>    -->
+        <section class="time">
 
-        <div class="chessboard-container">
-        <div class="chessboard-js"></div>
-        </div>
+            <section class="time_white">
+                <h3>Temps restant blancs</h3>
+                <p><span class="white-player">60</span>s</p>
+            </section>
 
+            <section class="time_black">
+                <h3>Temps restant noirs</h3>
+                <p><span class="black-player">60</span>s</p>
+            </section>
+            
+        </section>
+    </div>
 
-
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="./src/Black_white_wallpaper.js"></script>
     <script>
-    function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-    </script>
-
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+        </script>
     <script src="script.js"></script>
-
-
-
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</body>
 </html>
